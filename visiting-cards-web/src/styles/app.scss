@@ -11,12 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: EmblemaOne;
+  src: url('./fonts/EmblemaOne-Regular.ttf');
+}
+@font-face {
+  font-family: Modak;
+  src: url('./fonts/Modak-Regular.ttf');
+}
+
 .visiting-card-dom{
-  border: 1px solid red;
-  height: 350px;
-  width: 600px;
+  position: relative;
+  background: #2f3640;
+  height: 600px;
+  width: 1050px;
   margin: 1rem;
   padding: 1rem;
+  color:#fff;
+  box-shadow: 4px 4px 3px #a5abb4;
+
+  .name-section{
+    font-family: EmblemaOne;
+    //background: #23282f;
+    font-size: 2rem;
+  }
+  .logo-section{
+    font-family: Modak;
+    font-size: 5rem;
+    padding: 2rem;
+    background: #23282f;
+    border: 2px solid #4d5969;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .sub-section-big{
+    font-size: 1.3rem;
+  }
+  .sub-section-long-text{
+    color: #90b2e4;
+  }
+  .span-style-entity{
+    font-weight: bold;
+
+  }
+  .breaker{
+    padding-left:10px;
+    padding-right:10px;
+    font-weight:bold;
+  }
+  .entity-type{
+    background: #434d5b;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+  }
+  .sub-section{
+
+    color: #cacfd5;
+  }
 }
 #image-section{
   padding: 2rem;
