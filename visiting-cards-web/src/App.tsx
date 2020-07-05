@@ -32,27 +32,33 @@ function App() {
                                            ]}
                     />
                 </div>
+                <div className={'container-fluid'}>
+                    <div className={'row'}>
+                        <div className={'col-12'}>
+                            <button onClick={() => {
+                                const node: any = document.getElementById('image-section');
+                                htmlToImage.toPng(node)
+                                    .then(function (dataUrl) {
+                                        let img = new Image();
+                                        img.src = dataUrl;
+                                        var a = document.createElement('a');
+                                        a.setAttribute('href', dataUrl);
+                                        a.setAttribute("target", "_blank")
+                                        a.text = "download"
+                                        //  document.body.appendChild(a)
+                                        a.click()
+
+                                    })
+                                    .catch(function (error) {
+                                        console.error('oops, something went wrong!', error);
+                                    });
+                            }}>get Image
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
 
-                <button onClick={() => {
-                    const node: any = document.getElementById('image-section');
-                    htmlToImage.toPng(node)
-                        .then(function (dataUrl) {
-                            let img = new Image();
-                            img.src = dataUrl;
-                            var a = document.createElement('a');
-                            a.setAttribute('href', dataUrl);
-                            a.setAttribute("target", "")
-                            //document.append(a)
-                            a.click()
-
-                            document.body.appendChild(img);
-                        })
-                        .catch(function (error) {
-                            console.error('oops, something went wrong!', error);
-                        });
-                }}>get Image
-                </button>
             </header>
         </div>
     );
