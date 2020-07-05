@@ -24,12 +24,12 @@ code {
 
 .visiting-card-dom{
   position: relative;
-  background: #2f3640;
+  background: #02202f;
   height: 600px;
   width: 1050px;
   margin: 1rem;
   padding: 1rem;
-  color:#fff;
+  color:#EEE8AA;
   box-shadow: 4px 4px 3px #a5abb4;
 
   .name-section{
@@ -41,8 +41,8 @@ code {
     font-family: Modak;
     font-size: 5rem;
     padding: 2rem;
-    background: #23282f;
-    border: 2px solid #4d5969;
+    background: #03151e;
+    border:2px solid #50839c;
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -57,6 +57,9 @@ code {
     font-weight: bold;
 
   }
+  .entity-section-text{
+    color:#EEE8AA;
+  }
   .breaker{
     padding-left:10px;
     padding-right:10px;
@@ -68,10 +71,11 @@ code {
     padding-right: 7px;
     padding-bottom: 2px;
     border-radius: 10px;
+    color: #efefef;
   }
   .sub-section{
 
-    color: #cacfd5;
+    color: #e5e4da;
   }
 }
 #image-section{

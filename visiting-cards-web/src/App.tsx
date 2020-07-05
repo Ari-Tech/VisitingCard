@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
           <div id={"image-section"}>
-              <VisitingCardComponent address={'16 Flora Drive'}
-              chat={{id:'arindam.lahiri88', appName:'Skype'}}
+              <VisitingCardComponent address={'16 Ferraria Park, #909-123, Singapore'}
+              chat={{id:'john.doe87', appName:'Skype'}}
               company={'JPMorgan Chase'}
                                     firstName={'Arindam'}
                                      lastName={'Lahiri'}
@@ -15,12 +15,8 @@ function App() {
                                      selfDescription={'Front-End Developer with 10+ yrs experience in SDLC'}
                                      emails={[
                                          {
-                                             display:'a@b.c',
+                                             display:'abc@def.com',
                                              type:'personal'
-                                         },
-                                         {
-                                             display:'a@b.c',
-                                             type:'work'
                                          }
                                      ]}
                                      phones={[
@@ -29,7 +25,7 @@ function App() {
                                              type:'personal'
                                          },
                                          {
-                                             display:'+65 8823 xxxx',
+                                             display:'+65 0000 6276',
                                              type:'work'
                                          }
                                      ]}

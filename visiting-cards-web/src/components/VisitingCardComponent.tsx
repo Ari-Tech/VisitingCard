@@ -26,7 +26,7 @@ const VisitingCardComponent = (props: IVisitingCard) => {
     const renderPhoneSection = ()=>{
         let phones: any=[]
         props.phones.forEach((r:IEntity, index: number)=>{
-            phones.push(<span>{r.display} <span className={'entity-type'}>{r.type}</span></span>)
+            phones.push(<span className={'entity-section-text'}>{r.display} <span className={'entity-type'}>{r.type}</span></span>)
             if(index < props.phones.length-1){
                 phones.push(<span className={'breaker'}>|</span>)
             }
@@ -42,7 +42,7 @@ const VisitingCardComponent = (props: IVisitingCard) => {
     const renderEmailSection = ()=>{
         let emails: any=[]
         props.emails.forEach((r:IEntity, index: number)=>{
-            emails.push(<span>{r.display} <span className={'entity-type'}>{r.type}</span></span>)
+            emails.push(<span className={'entity-section-text'}>{r.display} <span className={'entity-type'}>{r.type}</span></span>)
             if(index < props.emails.length-1){
                 emails.push(<span className={'breaker'}>|</span>)
             }
@@ -77,7 +77,7 @@ const VisitingCardComponent = (props: IVisitingCard) => {
         <div className={'row mt-3 ml-2'}>
             <div className={'col-12 text-left'}>
                 <div className={'sub-section mt-3'}><span className={'span-style-entity'}>LinkedIn  </span> <span>
-                    <div>{props.linkedInUrl}</div>
+                    <div className={'entity-section-text'}>{props.linkedInUrl}</div>
                 </span></div>
             </div>
             <div className={'col-12 text-left'}>
@@ -95,13 +95,13 @@ const VisitingCardComponent = (props: IVisitingCard) => {
             <div className={'col-12 text-left'}>
                 <div className={'sub-section mt-3'}>
                     <span className={'span-style-entity'}><i className="fa fa-comment-o"></i> {props.chat.appName} </span>
-                    <div>{props.chat.id}</div>
+                    <div className={'entity-section-text'}>{props.chat.id}</div>
                 </div>
             </div>
             <div className={'col-12 text-left'}>
                 <div className={'sub-section mt-3'}>
                     <div className={'span-style-entity'}><i className="fa fa-address-card"></i> Address</div>
-                    <div>
+                    <div className={'entity-section-text'}>
                         {props.address}
                     </div>
                 </div>
